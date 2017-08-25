@@ -20,7 +20,7 @@ def versiontuple(s):
     '''
     return tuple(map(int, (s.split("."))))
 
-def searchappstore():
+def searchitunes():
 
     import requests
     import sys
@@ -89,4 +89,4 @@ def searchappstore():
 
 
 if __name__ == '__main__':
-    searchappstore()
+    searchitunes()
