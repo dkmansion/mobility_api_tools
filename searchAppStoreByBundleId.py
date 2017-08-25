@@ -71,7 +71,7 @@ def searchappstore():
         else:
             errorsFound += 1
             # BundleID is bad
-            #change test to red
+            #change text to red
             sys.stdout.write(RED)
             errorList.append(bundleid)
 
