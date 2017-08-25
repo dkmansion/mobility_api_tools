@@ -3,7 +3,7 @@
 
 """
  Created on Wed Oct 12 17:18:31 2016
- @author: mansiond
+ @author: dkmansion
  @license:  MIT
 """
 
