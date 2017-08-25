@@ -25,12 +25,12 @@ def searchappstore():
     import requests
     import sys
 
+    # ** bundleList is the ONLY ITEM THAT MUST BE CUSTOMIZED for this script to be useful to you.
     # Modify this dictionary list with the bundle IDs for the apps you wish to get info for with this script.
     bundleList = ["com.invalid.bundleid", "com.epic.rover", "com.epic.roverprerelease",
                   "com.epic.canto", "com.epic.cantoprerelease",
-                  "com.epic.haiku", "com.epic.haikuprerelease",
-                  "com.air-watch.agent", "com.citrix.ReceiveriPad",
-                  "com.another.bad.bundleid"]
+                  "com.another.bad.bundleid","com.epic.haiku", "com.epic.haikuprerelease",
+                  "com.air-watch.agent", "com.citrix.ReceiveriPad"]
 
     RED = "\033[1;31m"
     # BLUE = "\033[1;34m"
@@ -79,14 +79,13 @@ def searchappstore():
             #reset color to standard output
             sys.stdout.write(RESET)
 
-    if errorsFound > 0:
+    if errorsFound <> 0:
         sys.stdout.write(RED)
 
         print (str(SEPARATOR + "Errors found with BundleIDs"
                    + "\n\t\t" + str(errorList) + SEPARATOR))
         # reset color to standard output
         sys.stdout.write(RESET)
-
 
 
 if __name__ == '__main__':
