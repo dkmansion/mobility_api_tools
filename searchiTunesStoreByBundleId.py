@@ -5,7 +5,7 @@
     @author         dkmansion
     @revision       1.0 2017-08-24
     @description    Script to obtain current iTunes details for a list of apps,
-                    provided through their bundleID in the bundleList disctionary
+                    provided through their bundleID in the bundleList List
                     variable
     @license        MIT
     @warranty       None
@@ -26,7 +26,7 @@ def searchitunes():
     import sys
 
     # ** bundleList is the ONLY ITEM THAT MUST BE CUSTOMIZED for this script to be useful to you.
-    # Modify this dictionary list with the bundle IDs for the apps you wish to get info for with this script.
+    # Modify this list with the bundle IDs for the apps you wish to get info for with this script.
     bundleList = ["com.invalid.bundleid", "com.epic.rover", "com.epic.roverprerelease",
                   "com.epic.canto", "com.epic.cantoprerelease",
                   "com.another.bad.bundleid","com.epic.haiku", "com.epic.haikuprerelease",
